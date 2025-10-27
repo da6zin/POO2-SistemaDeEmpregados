@@ -1,0 +1,6 @@
+﻿# Arquivos de cache do Visual Studio
+.vs/
+
+# Pastas de Compilação
+bin/
+obj/	

@@ -1,0 +1,36 @@
+﻿<Window x:Class="POO2_SistemaDeEmpregados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POO2_SistemaDeEmpregados"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Closed="Window_Closed">
+
+        <Grid>
+            <Label Content="Dados do Empregado" HorizontalAlignment="Left" Margin="21,23,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+            <Label Content="Matricula" HorizontalAlignment="Left" Margin="21,62,0,0" VerticalAlignment="Top"/>
+            <Label Content="CPF" HorizontalAlignment="Left" Margin="22,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.267,0.31"/>
+            <Label Content="Nome" HorizontalAlignment="Left" Margin="21,111,0,0" VerticalAlignment="Top"/>
+            <Label Content="Endereço" HorizontalAlignment="Left" Margin="21,138,0,0" VerticalAlignment="Top"/>
+
+            <TextBox x:Name="TextBoxMatricula" HorizontalAlignment="Left" Margin="85,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213"/>
+            <TextBox x:Name="TextBoxCPF" HorizontalAlignment="Left" Margin="85,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213"/>
+            <TextBox x:Name="TextBoxNome" HorizontalAlignment="Left" Margin="85,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213"/>
+            <TextBox x:Name="TextBoxEndereco" HorizontalAlignment="Left" Margin="85,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="42"/>
+
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,66,10,0" Height="119"
+                VerticalAlignment="Top" HorizontalAlignment="Right" Width="109" >
+                <Grid>
+                    <Button x:Name="ButtonPesquisar" Content="Pesquisar" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" Width="84" Click="ButtonPesquisar_Click"/>
+                    <Button x:Name="ButtonSalvar" Content="Salvar" HorizontalAlignment="Center" Margin="0,29,0,0" VerticalAlignment="Top" Width="84" Click="ButtonSalvar_Click"/>
+                    <Button x:Name="ButtonExcluir" Content="Excluir" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" Width="84" Click="ButtonExcluir_Click"/>
+                    <Button x:Name="ButtonLimpar" Content="Limpar" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="84" Click="ButtonLimpar_Click"/>
+                </Grid>
+            </Border>
+
+            <DataGrid x:Name="DataGridEmpregadoList" Margin="0,201,0,0" ColumnWidth="*" CanUserAddRows="False"/>
+            <Label x:Name="LabelStatus" Content="Status" HorizontalAlignment="Left" Margin="334,3,0,0" VerticalAlignment="Top" Width="96"/>
+        </Grid>
+    </Window>
