@@ -1,15 +1,15 @@
 # Sistema de Gerenciamento de Empregados (WPF)
 
-Este é um projeto de CRUD (Create, Read, Update, Delete) desenvolvido em C# e WPF, demonstrando a interação entre uma interface gráfica e um banco de dados SQL Server (LocalDB) usando ADO.NET.
+Este é um projeto de CRUD desenvolvido em C# e WPF, demonstrando a interação entre uma interface gráfica e um banco de dados SQL Server (LocalDB) usando ADO.NET.
 
-O projeto foi baseado em material de aula da disciplina de Programação Orientada a Objetos, seguindo os padrões apresentados.
+O projeto foi baseado em material de aula da disciplina de Programação Orientada a Objetos 2, seguindo os padrões apresentados.
 
 ## Funcionalidades Implementadas
 
-* **Salvar:** Insere novos empregados no banco (com Matrícula em branco) ou atualiza empregados existentes (com Matrícula preenchida).
+* **Salvar:** Insere novos empregados no banco (com Matrícula em branco).
 * **Pesquisar:** Busca todos os empregados (com Matrícula em branco) ou um empregado específico por sua matrícula.
-* **Limpar:** Limpa os campos de texto da interface.
-* **Excluir:** Remove um empregado do banco de dados (implementado como atividade bônus).
+* **Limpar:** Limpa os dados do banco de dados.
+* **Excluir:** Remove um empregado do banco de dados.
 * **DataGrid:** Exibe os resultados da pesquisa em tempo real.
 * **Conexão Assíncrona:** A conexão com o banco de dados é feita em segundo plano para que a interface do usuário não trave ao iniciar.
 
@@ -20,7 +20,7 @@ Para rodar este projeto na sua máquina, siga os passos abaixo.
 ### Pré-requisitos
 
 * Visual Studio 2022 (com a carga de trabalho ".NET Desktop Development")
-* SQL Server Express LocalDB (normalmente instalado junto com o Visual Studio)
+* SQL Server Express LocalDB (normalmente ja é instalado junto com o Visual Studio)
 
 ### Passos para Instalação
 
