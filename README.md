@@ -13,14 +13,14 @@ O projeto foi baseado em material de aula da disciplina de Programação Orienta
 * **DataGrid:** Exibe os resultados da pesquisa em tempo real.
 * **Conexão Assíncrona:** A conexão com o banco de dados é feita em segundo plano para que a interface do usuário não trave ao iniciar.
 
-## 🛠️ Como Rodar o Projeto
+## Como Rodar o Projeto
 
 Para rodar este projeto na sua máquina, siga os passos abaixo.
 
 ### Pré-requisitos
 
-* Visual Studio 2022 (com a carga de trabalho ".NET Desktop Development")
-* SQL Server Express LocalDB (normalmente ja é instalado junto com o Visual Studio)
+* Visual Studio 2022
+* SQL Server Express LocalDB
 
 ### Passos para Instalação
 
